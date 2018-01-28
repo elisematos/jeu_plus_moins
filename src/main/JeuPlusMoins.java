@@ -4,15 +4,15 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class JeuPlusMoins {
+	
+	static Scanner sc = new Scanner(System.in);
+	
 	public static void main(String[] args) {
-		
+		//Génération de nombre aléatoire
 		Random r = new Random();
 		int valeur = 1 + r.nextInt(100 - 1);
-		System.out.println(comparaison(50,valeur));
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Veuillez saisir un nombre :");
-		int nombre = sc.nextInt();
-		System.out.println("Vous avez saisi : " + nombre);
+		/*Comparaison entre le nombre aléatoire et le nombre choisi par le joueur*/
+		System.out.println(comparaison(entreeNombre(),valeur));
 	}
 		
 	public static String comparaison(int i, int j) {
@@ -26,5 +26,8 @@ public class JeuPlusMoins {
 			return "Vous avez gagné.";
 		}
 	}
-	
+	public static int entreeNombre() {
+		System.out.println("Veuillez saisir un nombre :");
+		return sc.nextInt();
+	}
 }
