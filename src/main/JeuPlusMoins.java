@@ -12,13 +12,13 @@ public class JeuPlusMoins {
 		
 	public static String comparaison(int i, int j) {
 		if (i<j) {
-			return "Le nombre mystï¿½rieux est plus petit.";
+			return "Le nombre mystérieux est plus petit.";
 		}
 		else if (i>j) {
-			return "Le nombre mystï¿½rieux est plus grand.";	
+			return "Le nombre mystérieux est plus grand.";	
 		}
 		else {
-			return "Vous avez gagnï¿½.";
+			return "Vous avez gagné.";
 		}
 	}
 	
